@@ -1,0 +1,55 @@
+{
+  "name": "KrishiConnectMobile",
+  "slug": "krishiconnect-mobile",
+  "version": "1.0.0",
+  "orientation": "portrait",
+  "icon": "./assets/icon.png",
+  "userInterfaceStyle": "light",
+  "splash": {
+    "image": "./assets/splash.png",
+    "resizeMode": "contain",
+    "backgroundColor": "#1D9E75"
+  },
+  "assetBundlePatterns": ["**/*"],
+  "ios": {
+    "supportsTablet": false,
+    "bundleIdentifier": "com.krishiconnect.mobile",
+    "infoPlist": {
+      "NSCameraUsageDescription": "ফসলের সমস্যার ছবি তোলার জন্য।",
+      "NSPhotoLibraryUsageDescription": "গ্যালারি থেকে ছবি নির্বাচনের জন্য।"
+    }
+  },
+  "android": {
+    "adaptiveIcon": {
+      "foregroundImage": "./assets/adaptive-icon.png",
+      "backgroundColor": "#1D9E75"
+    },
+    "package": "com.krishiconnect.mobile",
+    "permissions": [
+      "CAMERA",
+      "READ_EXTERNAL_STORAGE",
+      "WRITE_EXTERNAL_STORAGE",
+      "ACCESS_NETWORK_STATE",
+      "RECEIVE_BOOT_COMPLETED",
+      "VIBRATE"
+    ]
+  },
+  "web": {
+    "favicon": "./assets/favicon.png"
+  },
+  "plugins": [
+    "expo-router",
+    [
+      "expo-image-picker",
+      {
+        "photosPermission": "গ্যালারি থেকে ছবি নির্বাচনের অনুমতি দিন।",
+        "cameraPermission": "ফসলের ছবি তোলার অনুমতি দিন।"
+      }
+    ]
+  ],
+  "extra": {
+    "apiBaseUrl": "http://localhost/api",
+    "eas": { "projectId": "krishiconnect-mobile" }
+  },
+  "scheme": "krishiconnect"
+}
