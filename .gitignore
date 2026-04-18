@@ -1,0 +1,40 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Env files
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Node / Next / Expo
+**/node_modules/
+**/.next/
+**/dist/
+**/build/
+**/.expo/
+**/.expo-shared/
+
+# Laravel / PHP
+backend/vendor/
+backend/storage/*.key
+backend/storage/logs/
+backend/bootstrap/cache/*.php
+
+# Coverage / cache
+**/.cache/
+**/.turbo/
+**/.parcel-cache/
+**/coverage/
+
+# Python (if any tooling)
+__pycache__/
+*.pyc
